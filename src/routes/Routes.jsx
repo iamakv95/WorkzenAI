@@ -6,13 +6,14 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
-import { Home } from "../pages";
+import { FindJobs, Home } from "../pages";
 
 const Routes = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route element={<MainLayout />}>
         <Route index element={<Home />} />
+        <Route path="/find" element={<FindJobs />} />
       </Route>
     )
   );
