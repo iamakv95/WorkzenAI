@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { PiBookmarkSimple, PiBookmarkFill } from "react-icons/pi";
+import { Button } from "../components";
 
 const JobCard = () => {
   const [isBookmarked, setIsBookmarked] = useState(false);
@@ -10,9 +11,11 @@ const JobCard = () => {
     <div className="border rounded-2xl border-offwhite/20 p-2 flex-1 ">
       <div className="bg-darkGray p-6 rounded-2xl min-h-[300px]">
         <div className="flex justify-between items-center gap-2 mb-4">
-          <div className="rounded-full border border-offwhite bg-offwhite text-darkGray px-3 py-1 text-[12px]">
-            20 July, 2024
-          </div>
+          <Button
+            title="20 July, 2024"
+            containerClass="px-3 py-1 border-offwhite bg-offwhite cursor-default"
+            titleClass="text-darkGray text-[12px]"
+          />
           <div
             onClick={handleBookmark}
             className="rounded-full border border-offwhite bg-offwhite p-1 cursor-pointer"
@@ -42,9 +45,11 @@ const JobCard = () => {
           <p className="text-white text-[14px]">$250/month</p>
           <p className="text-offwhite/90 text-[12px]">New yourk, USA</p>
         </div>
-        <button className="bg-offwhite text-black rounded-full px-4 py-2 text-[14px]">
-          Job Details
-        </button>
+        <Button
+          title="Job Details"
+          containerClass="px-4 py-2 bg-offwhite"
+          titleClass="text-black text-[14px]"
+        />
       </div>
     </div>
   );

@@ -16,9 +16,17 @@ export default {
     },
     container: {
       center: true,
+      screens: {
+        xl: "1530px",
+      },
       padding: "2rem",
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero-pattern": "url('/img/hero-pattern.svg')",
+        "footer-texture": "url('/img/footer-texture.png')",
+      },
+    },
   },
   plugins: [],
 };

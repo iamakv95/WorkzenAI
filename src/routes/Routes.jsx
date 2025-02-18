@@ -6,7 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
-import { FindJobs, Home } from "../pages";
+import { FindJobs, Home, JobDetails } from "../pages";
 
 const Routes = () => {
   const router = createBrowserRouter(
@@ -14,6 +14,7 @@ const Routes = () => {
       <Route element={<MainLayout />}>
         <Route index element={<Home />} />
         <Route path="/find" element={<FindJobs />} />
+        <Route path="/jobdetails" element={<JobDetails />} />
       </Route>
     )
   );

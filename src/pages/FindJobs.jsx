@@ -15,7 +15,7 @@ const FindJobs = () => {
 
   return (
     <section className="bg-black w-full py-24">
-      <div className="container flex">
+      <div className="container flex gap-10">
         {/* Sidebar */}
         <div className="w-1/5 px-4">
           <div className="border border-offwhite/20 bg-black p-6 rounded-2xl font-semibold flex flex-col items-center gap-6 mb-10">
@@ -23,7 +23,7 @@ const FindJobs = () => {
               Get your resume with our Resume AI service
             </h3>
             <button className="bg-offwhite text-black rounded-full px-6 py-2">
-              Job Details
+              <span className="font-medium"> More Details</span>
             </button>
           </div>
 
@@ -84,7 +84,7 @@ const FindJobs = () => {
         </div>
 
         {/* Job Listings */}
-        <div className="w-4/5 px-8">
+        <div className="w-4/5">
           <div className="mb-8 flex items-center justify-between">
             <h5 className="text-white text-[25px]">Recommended Jobs</h5>
             <div className="flex gap-2 items-center">

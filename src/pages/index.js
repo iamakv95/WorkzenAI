@@ -1,3 +1,4 @@
 import Home from "./Home";
 import FindJobs from "./FindJobs";
-export { Home, FindJobs };
+import JobDetails from "./JobDetails";
+export { Home, FindJobs, JobDetails };
