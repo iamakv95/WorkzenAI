@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { PiBookmarkSimple, PiBookmarkFill } from "react-icons/pi";
 import { Button } from "../components";
+import { Link } from "react-router-dom";
 
 const JobCard = () => {
   const [isBookmarked, setIsBookmarked] = useState(false);
@@ -24,9 +25,9 @@ const JobCard = () => {
           </div>
         </div>
         <h4 className="text-offwhite/80 mb-1 text-[12px]">Amazon</h4>
-        <h2 className="text-white text-[20px] leading-7">
+        <Link to="/jobs/1" className="text-white text-[20px] leading-7">
           Senior Product & Brand Design
-        </h2>
+        </Link>
         <div className="flex flex-wrap gap-2 mt-4">
           <div className="rounded-full border border-offwhite/20 bg-darkgray text-offwhite px-4 py-1 text-[12px]">
             Part time

@@ -29,12 +29,12 @@ const Header = () => {
             </Link>
           ))}
         </nav>
-        <Link to="/login" className="font-medium text-white">
+        <Link to="/login" className="font-medium text-white/70 hover:text-white/90 transition-all duration-300">
           Login
         </Link>
       </div>
       <div className="border-b-2 border-offwhite/20"></div>
-      <div className="container flex justify-center gap-6 py-6  flex-wrap">
+      <div className="container flex justify-center gap-6 py-6 flex-wrap sticky top-0 w-full">
         <div className="flex relative px-6 items-center gap-4  border-r border-offwhite/10">
           <span className="text-offwhite rounded-full p-1 border border-offwhite/40 text-[15px]">
             <PiMagnifyingGlassLight />
